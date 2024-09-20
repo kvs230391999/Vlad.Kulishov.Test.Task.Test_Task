@@ -12,11 +12,11 @@ create table roles (
   primary key (id)
 );
 
-create TABLE users_roles (
+create TABLE persons_roles (
   person_id               bigint not null,
   role_id                 int not null,
   primary key (person_id, role_id),
-  foreign key (person_id) references users (id),
+  foreign key (person_id) references persons (id),
   foreign key (role_id) references roles (id)
 );
 
