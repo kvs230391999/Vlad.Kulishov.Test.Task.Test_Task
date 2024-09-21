@@ -3,9 +3,8 @@ package Vlad.Kulishov.Test.Task.Test_Task.dto;
 import lombok.Data;
 
 @Data
-public class PersonRequest {
+public class JwtRequest {
 
     private String username;
-    private String reviews;
-    private String rating;
+    private String password;
 }
